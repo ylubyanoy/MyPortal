@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'easy_thumbnails',
+    'taggit',
+    'precise_bbcode',
     'BlogMySelf',
 ]
 
@@ -124,3 +127,31 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Dirs for project templates
+TEMPLATES_DIRS = (os.path.join(BASE_DIR, 'templates'), )
+STATIC_FILES = (os.path.join(BASE_DIR, 'static'), )
+# Dirs for media and upload files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'upload')
+MEDIA_URL = '/media/'
+
+# Names for in and out
+LOGIN_URL = "login"
+LOGOUT_URL = "logout"
+
+SITE_ID = 1
+
+THUMBNAIL_BASEDIR = "thumbnails"
+THUMBNAIL_ALIASES = {
+    "good.Good.image": {
+        "base": {"size": (200, 100)}
+    }
+}
+
+MANAGERS = (("admin", "dreif@mail.ru"), )
+
+# EMail settings
+EMAIL_HOST = "smtp.mail.ru"
+EMAIL_HOST_USER = "dreif"
+EMAIL_HOST_PASSWORD = "123"
+DEFAULT_FROM_EMAIL = "dreif@mail.ru"
