@@ -150,7 +150,7 @@ THUMBNAIL_ALIASES = {
 
 MANAGERS = (("admin", "dreif@mail.ru"), )
 
-# EMail settings
+# E-Mail settings
 EMAIL_HOST = "smtp.mail.ru"
 EMAIL_HOST_USER = "dreif"
 EMAIL_HOST_PASSWORD = "123"
