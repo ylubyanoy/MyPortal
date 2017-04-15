@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'taggit',
     'precise_bbcode',
     'BlogMySelf',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -158,3 +159,5 @@ EMAIL_HOST = "smtp.mail.ru"
 EMAIL_HOST_USER = "dreif"
 EMAIL_HOST_PASSWORD = "123"
 DEFAULT_FROM_EMAIL = "dreif@mail.ru"
+
+LOGIN_REDIRECT_URL = "main"
