@@ -1,5 +1,5 @@
-from django.views.generic.base import TemplateView
 from generic.mixins import CategoryListMixin
+from django.views.generic.base import TemplateView
 
 
 class MainPageView(TemplateView, CategoryListMixin):
