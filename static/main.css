@@ -130,3 +130,12 @@
 #pagination #next-page {
     float: right;
 }
+
+.posted {
+    font-style: italic;
+    text-align: right;
+}
+
+.buttons {
+    text-align: right;
+}

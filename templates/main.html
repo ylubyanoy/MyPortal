@@ -13,6 +13,10 @@
             <li>
                 <a href="{{ page_url }}" {% if page_url == current_url %} class="current"{% endif %}>Главная</a>
             </li>
+            {% url "news_index" as page_url %}
+            <li>
+                <a href="{{ page_url }}"{% if page_url == current_url %} class="current"{% endif %}>Новости</a>
+            </li>
             {% url "guestbook" as page_url %}
             <li>
                 <a href="{{ page_url }}"{% if page_url == current_url %}class="current"{% endif %}>Гостевая</a>

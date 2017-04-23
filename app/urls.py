@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^logout/', auth_views.logout, name='logout'),
     url(r'^', include('BlogMySelf.urls')),
     url(r'^guestbook/', include('guestbook.urls')),
+    url(r'^news/', include('news.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

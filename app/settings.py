@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'precise_bbcode',
     'BlogMySelf',
     'guestbook',
+    'news',
 ]
 
 MIDDLEWARE = [
