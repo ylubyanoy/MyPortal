@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'BlogMySelf',
     'guestbook',
     'news',
+    'imagepool',
 ]
 
 MIDDLEWARE = [

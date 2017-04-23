@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^', include('BlogMySelf.urls')),
     url(r'^guestbook/', include('guestbook.urls')),
     url(r'^news/', include('news.urls')),
+    url(r'^imagepool/', include('imagepool.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
