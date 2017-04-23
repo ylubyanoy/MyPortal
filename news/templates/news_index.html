@@ -4,7 +4,7 @@
 {% endblock %}
 {% block main %}
     {% include "generic/messages.html" %}
-    <h2>Новости</h2>
+    <h2>Новости </h2>
     {% if perms.news.add_new %}
         <p><a href="{% url "news_add" %}">Добавить новость</a></p>
     {% endif %}
