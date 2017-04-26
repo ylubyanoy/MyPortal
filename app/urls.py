@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^guestbook/', include('guestbook.urls')),
     url(r'^news/', include('news.urls')),
     url(r'^imagepool/', include('imagepool.urls')),
+    url(r'^categories/', include('categories.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

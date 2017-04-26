@@ -76,6 +76,7 @@
 .form {
     width: 400px;
     margin: 20px 0 20px 0;
+    border-collapse: collapse;
 }
 
 .bottom-indent {
@@ -171,5 +172,14 @@
 
 #imagepool_image_list td a.disabled:link, #imagepool_image_list td a.disabled:visited,
 #imagepool_image_list td a.disabled:active, #imagepool_image_list td a.disabled:hover {
+    display: none;
+}
+
+.form th, .form td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.form th:first-child, .form td:first-child {
     display: none;
 }
