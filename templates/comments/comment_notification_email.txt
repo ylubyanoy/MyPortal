@@ -1,0 +1,10 @@
+На сайте был оставлен комментарий:
+
+- товар: {{ content_object.name }} (http://localhost:8080 {{ content_object.get_absolute_url }});
+- пользователь: {{ comment.user_name }};
+- email: {{ comment.user_email }};
+- содержимое: {{ comment.comment }};
+- дата: {{ comment.submit_date }};
+- IP-адрес: {{ comment.ip_address }}.
+
+Гиперссылка на страницу комментария: http://localhost:8080/admin/comments/comment/{{ comment.pk }}/.

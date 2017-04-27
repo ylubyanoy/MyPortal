@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'easy_thumbnails',
     'taggit',
     'precise_bbcode',
@@ -45,6 +46,8 @@ INSTALLED_APPS = [
     'news',
     'imagepool',
     'categories',
+    'django_comments',
+    'goods',
 ]
 
 MIDDLEWARE = [
@@ -137,7 +140,7 @@ STATICFILES_DIRS = [
 
 # Dirs for project templates
 TEMPLATES_DIRS = (os.path.join(BASE_DIR, 'templates'), )
-#STATIC_FILES = (os.path.join(BASE_DIR, 'static'), )
+# STATIC_FILES = (os.path.join(BASE_DIR, 'static'), )
 # Dirs for media and upload files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload')
 MEDIA_URL = '/media/'
@@ -150,7 +153,7 @@ SITE_ID = 1
 
 THUMBNAIL_BASEDIR = "thumbnails"
 THUMBNAIL_ALIASES = {
-    "good.Good.image": {
+    "goods.Good.image": {
         "base": {"size": (200, 100)}
     }
 }
