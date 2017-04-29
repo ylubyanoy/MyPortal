@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^categories/', include('categories.urls')),
     url(r'^goods/', include('goods.urls')),
     url(r'^comments/', include('django_comments.urls')),
+    url(r'^blog/', include('blog.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

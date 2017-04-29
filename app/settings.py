@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# noinspection PyPackageRequirements
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'categories',
     'django_comments',
     'goods',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -140,12 +142,11 @@ STATICFILES_DIRS = [
 
 # Dirs for project templates
 TEMPLATES_DIRS = (os.path.join(BASE_DIR, 'templates'), )
-# STATIC_FILES = (os.path.join(BASE_DIR, 'static'), )
 # Dirs for media and upload files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload')
 MEDIA_URL = '/media/'
 
-# Names for in and out
+# Names for login and logout
 LOGIN_URL = "login"
 LOGOUT_URL = "logout"
 
