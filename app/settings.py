@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'django_comments',
     'goods',
     'blog',
+    'about',
+    'contacts',
+    'howtobuy',
 ]
 
 MIDDLEWARE = [

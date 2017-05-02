@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
+from about.views import AboutView
+from contacts.views import ContactsView
+from howtobuy.views import HowToBuyView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -31,6 +34,9 @@ urlpatterns = [
     url(r'^goods/', include('goods.urls')),
     url(r'^comments/', include('django_comments.urls')),
     url(r'^blog/', include('blog.urls')),
+    url(r'^about/', AboutView.as_view(), name='about'),
+    url(r'^contacts/', ContactsView.as_view(), name='contacts'),
+    url(r'^howtobuy/', HowToBuyView.as_view(), name='howtobuy'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
